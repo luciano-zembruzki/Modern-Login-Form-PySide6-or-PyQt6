@@ -46,6 +46,10 @@ QLineEdit{
 	color: rgb(140, 140, 140);
 }
 
+QLineEdit:hover{
+	border: 2px solid rgb(139, 142, 139);
+}
+
 QPushButton#login_button{
 	min-height: 45px;
 	border-radius: 20px;
@@ -53,19 +57,24 @@ QPushButton#login_button{
 	color: #FFFFFF;
 }
 
-QCheckBox{
-	font-size: 10px;
-	color: #FFFFFF;
+QPushButton#login_button:hover{
+	border: 2px solid rgb(255, 255, 255);
 }
 
-QLabel#forgot{
-	font-style: italic;
+QCheckBox{
 	font-size: 10px;
 	color: #FFFFFF;
 }
 
 QLabel{
 	color: rgb(95, 94, 108);
+}
+
+QPushButton#forgot_button{
+	border: 0px;
+	font-style: italic;
+	font-size: 10px;
+	color: #FFFFFF;
 }
 
 QPushButton#close_button{
@@ -311,12 +320,15 @@ QPushButton#minimize_button{
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="forgot">
+           <widget class="QPushButton" name="forgot_button">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <italic>true</italic>
+             </font>
+            </property>
             <property name="text">
              <string>Forgot Password</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
             </property>
            </widget>
           </item>

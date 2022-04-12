@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_loginMhHrgX.ui'
+## Form generated from reading UI file 'ui_loginWwYRzh.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.4
+## Created by: Qt User Interface Compiler version 6.2.3
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -47,6 +47,10 @@ class Ui_Login(object):
 "	color: rgb(140, 140, 140);\n"
 "}\n"
 "\n"
+"QLineEdit:hover{\n"
+"	border: 2px solid rgb(139, 142, 139);\n"
+"}\n"
+"\n"
 "QPushButton#login_button{\n"
 "	min-height: 45px;\n"
 "	border-radius: 20px;\n"
@@ -54,13 +58,11 @@ class Ui_Login(object):
 "	color: #FFFFFF;\n"
 "}\n"
 "\n"
-"QCheckBox{\n"
-"	font-size: 10px;\n"
-"	color: #FFFFFF;\n"
+"QPushButton#login_button:hover{\n"
+"	border: 2px solid rgb(255, 255, 255);\n"
 "}\n"
 "\n"
-"QLabel#forgot{\n"
-"	font-style: italic;\n"
+"QCheckBox{\n"
 "	font-size: 10px;\n"
 "	color: #FFFFFF;\n"
 "}\n"
@@ -69,14 +71,21 @@ class Ui_Login(object):
 "	color: rgb(95, 94, 108);\n"
 "}\n"
 "\n"
+"QPushButton#forgot_button{\n"
+"	border: 0px;\n"
+"	font-style: italic;\n"
+"	font-size: 10p"
+                        "x;\n"
+"	color: #FFFFFF;\n"
+"}\n"
+"\n"
 "QPushButton#close_button{\n"
 "	background-color: rgb(186, 0, 0);\n"
 "	border-radius: 6px;\n"
 "}\n"
 "\n"
 "QPushButton#minimize_button{\n"
-"	background-color:"
-                        " rgb(226, 226, 0);\n"
+"	background-color: rgb(226, 226, 0);\n"
 "	border-radius: 6px;\n"
 "}\n"
 "")
@@ -174,11 +183,13 @@ class Ui_Login(object):
 
         self.horizontalLayout_2.addWidget(self.checkBox)
 
-        self.forgot = QLabel(self.bottom_frame)
-        self.forgot.setObjectName(u"forgot")
-        self.forgot.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.forgot_button = QPushButton(self.bottom_frame)
+        self.forgot_button.setObjectName(u"forgot_button")
+        font = QFont()
+        font.setItalic(True)
+        self.forgot_button.setFont(font)
 
-        self.horizontalLayout_2.addWidget(self.forgot)
+        self.horizontalLayout_2.addWidget(self.forgot_button)
 
 
         self.verticalLayout.addWidget(self.bottom_frame)
@@ -202,6 +213,6 @@ class Ui_Login(object):
         self.lineEdit_2.setPlaceholderText(QCoreApplication.translate("Login", u"Password", None))
         self.login_button.setText(QCoreApplication.translate("Login", u"Sign In", None))
         self.checkBox.setText(QCoreApplication.translate("Login", u"Remember me", None))
-        self.forgot.setText(QCoreApplication.translate("Login", u"Forgot Password", None))
+        self.forgot_button.setText(QCoreApplication.translate("Login", u"Forgot Password", None))
     # retranslateUi
 
