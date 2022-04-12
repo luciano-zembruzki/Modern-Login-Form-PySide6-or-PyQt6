@@ -1,1 +1,1 @@
-# Modern_Login_Form_PySide6_or_PyQt6
+# Modern Login Form PySide6 or PyQt6
