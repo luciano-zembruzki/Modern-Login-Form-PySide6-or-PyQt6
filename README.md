@@ -4,5 +4,5 @@
 
 Login
 <h1 align="center">
-    <img alt="" title="#delicinha" src=".github/screenshot.png"/>
+    <img alt="" title="" src="screenshot.png"/>
 </h1>
