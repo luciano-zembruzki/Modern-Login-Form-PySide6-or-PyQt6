@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Login
 <h1 align="center">
-    <img alt="" title="" src="screenshot.png"/>
+    <img alt="" title="" src="screen.png"/>
 </h1>
 
 
